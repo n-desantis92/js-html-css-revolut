@@ -14,13 +14,15 @@ font-family: 'Roboto', sans-serif;}
 
 header {
   width: 100%;
-  height: 120px;
+  height: 60px;
   background-color: lightgrey;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px,
+              rgb(0 0 0 / 8%) 0px 8px 16px 0px;
 }
 
 main {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 60px);
   padding: 10px 20px;
 }
 
@@ -30,16 +32,16 @@ main {
 }
 
 .nav-left {
- height: 50px;
- display: flex;
- align-items: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-right {
- height: 50px;
- display: flex;
- align-items: center;
- color: rgba(0,0,0,0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 ul  {
@@ -61,26 +63,39 @@ li {
 .menu-list {
   flex-direction: column;
   list-style: none;
-  background-color: green;
   display: none;
+  width: 150px;
+  padding: 5px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px,
+              rgb(0 0 0 / 8%) 0px 8px 16px 0px;
+}
+
+.menu-list li {
+  padding: 10px;
 }
 
 .bot-menu:hover .menu-list, .active {
   display: block;
   position: absolute;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px,
+              rgb(0 0 0 / 8%) 0px 8px 16px 0px;
 }
 
 .btn-grey {
-  padding: 10px 15px;
   background-color: lightgrey;
-  border-radius: 10px;
 }
 
 .btn-black {
-  padding: 10px 15px;
   background-color: black;
   color: #fff;
-  border-radius: 10px;
+}
+
+.colB {
+  color: black;
 }
