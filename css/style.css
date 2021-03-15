@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: lightgrey;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 120px);
+}
