@@ -74,6 +74,10 @@ li {
   padding: 10px;
 }
 
+.menu-list li:hover {
+  color: black;
+}
+
 .bot-menu:hover .menu-list, .active {
   display: block;
   position: absolute;
@@ -96,6 +100,6 @@ li {
   color: #fff;
 }
 
-.colB {
-  color: black;
+li.btn.btn-black:hover {
+  color: #fff;
 }
