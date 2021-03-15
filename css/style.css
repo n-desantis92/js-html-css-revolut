@@ -13,3 +13,35 @@ main {
   width: 100%;
   height: calc(100vh - 120px);
 }
+
+.navigatore {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+ul  {
+  display: flex;
+}
+
+.bot-menu {
+  margin-right: 15px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.menu-list {
+  flex-direction: column;
+  list-style: none;
+  background-color: green;
+  display: none;
+}
+
+.bot-menu:hover .menu-list {
+  display: block;
+  position: absolute;
+}
+
+.active {
+  display: block;
+}
