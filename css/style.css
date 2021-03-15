@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -12,6 +21,7 @@ header {
 main {
   width: 100%;
   height: calc(100vh - 120px);
+  padding: 10px 20px;
 }
 
 .navigatore {
@@ -19,16 +29,33 @@ main {
   justify-content: space-between;
 }
 
+.nav-left {
+ height: 50px;
+ display: flex;
+ align-items: center;
+}
+
+.nav-right {
+ height: 50px;
+ display: flex;
+ align-items: center;
+ color: rgba(0,0,0,0.5);
+}
+
 ul  {
   display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+li {
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 .bot-menu {
-  margin-right: 15px;
   list-style: none;
-  font-size: 20px;
   position: relative;
-
 }
 
 .menu-list {
@@ -41,4 +68,19 @@ ul  {
 .bot-menu:hover .menu-list, .active {
   display: block;
   position: absolute;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.btn-grey {
+  padding: 10px 15px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.btn-black {
+  padding: 10px 15px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
 }
