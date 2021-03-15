@@ -17,7 +17,6 @@ main {
 .navigatore {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 ul  {
@@ -28,6 +27,8 @@ ul  {
   margin-right: 15px;
   list-style: none;
   font-size: 20px;
+  position: relative;
+
 }
 
 .menu-list {
@@ -37,11 +38,7 @@ ul  {
   display: none;
 }
 
-.bot-menu:hover .menu-list {
+.bot-menu:hover .menu-list, .active {
   display: block;
   position: absolute;
-}
-
-.active {
-  display: block;
 }
