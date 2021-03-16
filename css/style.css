@@ -44,6 +44,21 @@ main {
   color: rgba(0, 0, 0, 0.5);
 }
 
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover {
+  color: black;
+}
+
+.nav-left ul li:nth-child(2) a {
+  color: black;
+}
+
+
+
 ul  {
   display: flex;
   list-style: none;
